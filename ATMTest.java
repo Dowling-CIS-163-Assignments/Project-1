@@ -119,10 +119,24 @@
 //
 //
 //    @Test
-//    public void testTakeOutNull() {
+//    public void testTakeOutAmountInsufficientTotal() {
 //        ATM s1 = new ATM(3, 1, 2);
-//        ATM s2 = s1.takeOut(700);
-//        assertEquals(s2, null);
+//        ATM s2 = null;
+//
+//        try {
+//            s2 = s1.takeOut(700);
+//            Assert.fail("No exception was thrown");
+//        }
+//        catch (IllegalArgumentException e) {
+//            assertTrue(e != null);
+//            assertEquals(3, s1.getHundreds());
+//            assertEquals(1, s1.getFifties());
+//            assertEquals(2, s1.getTwenties());
+//            assertEquals(null, s2);
+//        }
+//        catch (Exception e) {
+//            Assert.fail("Wrong exception was thrown");
+//        }
 //    }
 //
 //
