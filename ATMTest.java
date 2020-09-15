@@ -125,7 +125,7 @@
 //
 //        try {
 //            s2 = s1.takeOut(700);
-//            Assert.fail("No exception was thrown");
+//            fail("No exception was thrown");
 //        }
 //        catch (IllegalArgumentException e) {
 //            assertTrue(e != null);
@@ -135,7 +135,7 @@
 //            assertEquals(null, s2);
 //        }
 //        catch (Exception e) {
-//            Assert.fail("Wrong exception was thrown");
+//            fail("Wrong exception was thrown");
 //        }
 //    }
 //
